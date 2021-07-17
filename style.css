@@ -1,5 +1,108 @@
 *{
     margin:0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    border-style: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(
+90deg
+,#252e90a8, #252e90a8), url(img/two-businessmen-discussing-work-busy-open-plan-office-59933069.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: gray;
+}
+
+#container{
+    width: 52%;
+    margin: 30px 0;
+}
+
+#form-head{
+    margin: 0 0 2em 0;
+}
+
+#form-head #title{
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2.4em;
+    margin: 0 0 0.2em 0;
+}
+
+#form-head p{
+    color: #FFFFFF;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.3em;
+    font-weight: 200;
+}
+
+#survey-form{
+    background-color: rgb(27 23 50 / 0.8);
+    padding: 2.5em;
+    border-radius: 7px;
+}
+
+span{
+    font-size: 0.5px;
+}
+
+/* #survey-form label, p{
+    color: #e8e8e8;
+} */
+
+.form-group{
+    margin: 0 0 2em 0;
+}
+
+.group-labels{
+    margin: 0 0 0.5em 0;
+    display: block;
+    color: #e8e8e8;
+}
+
+.rc-labels{
+    color: #e8e8e8;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0.6em 0;  
+}
+
+#name, #email, #number, #dropdown, #comments, #submit{
+    width: 100%;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    border-radius: 6px;
+    color: #495057;
+}
+
+input:focus ,textarea:focus, select:focus, button:focus{
+    outline:none;
+    border-style: none !important;
+
+}
+
+.rc-labels>input{
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 0.8em 0 0;
+}
+
+#submit{
+    background-color: #37af65;
+    color: #e8e8e8;
+    font-size: 1.1em;
+    transition: all .15s ease;
+}
+
+#submit:hover{
+    background-color: #2b6441;
+    color: #e8e8e8;
 }
